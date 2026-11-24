@@ -43,6 +43,23 @@ a.brand,a.nav-btn,.cartridge{color:inherit;text-decoration:none}a:focus-visible{
 @media(max-width:550px){.library{max-width:450px;padding:0 15px 30px}.shelf{grid-template-columns:1fr;gap:16px}.library .intro .pixel-title{height:30px}.cart-body{padding:17px 16px 13px}.cart-body h2 canvas{height:18px}.cart-body p{min-height:0;margin:8px 0 14px}.cart-foot{padding-top:11px}.game-cover canvas{aspect-ratio:1.9;object-fit:cover}.nav-actions .nav-label,.nav-actions #help span:last-child{display:none}.nav-actions #help,.nav-actions #menu-link{width:32px;justify-content:center;padding:0}.slice-scene .overlay{padding:6px}.slice-scene .overlay-card{padding:10px 12px}.slice-scene .overlay-card>.icon{display:none}.slice-scene .overlay-card h2{font-size:19px}.slice-scene .overlay-card p{margin:5px 0}}
 @media(prefers-reduced-motion:reduce){.cartridge:hover,.cartridge:focus-visible{transform:none}}
 
+</style><style>
+.library{max-width:1290px}.shelf{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.cart-body{padding:20px 18px 15px}.cart-body h2 canvas{max-width:100%;height:clamp(14px,1.45vw,21px)}.cart-body p{min-height:42px;margin-bottom:12px}.dead .play-chip{background:#ffd192;color:#392c27}
+.dead-page{--gold:#ffcb82;--cool:#85e4d1;max-width:1150px}.dead-page .intro .spark{background:var(--gold)}.dead-page .intro{padding:26px 0 22px}
+.ds-layout{display:grid;grid-template-columns:minmax(0,1fr) 205px;gap:16px;align-items:start}.ds-machine{overflow:hidden;border:1px solid #4e4b56;border-radius:10px;background:#211f2d;box-shadow:0 5px 0 #08091053}
+.ds-top{display:flex;align-items:center;gap:20px;padding:13px 17px;border-bottom:1px solid #4e4b56}.ds-vital{width:32%;min-width:85px}.ds-vital.xp{width:auto;flex:1}
+.ds-vital>span{display:flex;align-items:center;gap:7px;color:#e2d6c7;font:600 12px var(--mono)}.ds-vital b{font-size:12px;color:#f8e6c3}.ds-vital small{margin-left:auto;color:#aba8b2;font:11px var(--mono)}
+.ds-vital meter{width:100%;height:7px;display:block;margin-top:6px;border:0;border-radius:1px;background:#3d3441;appearance:none}
+.ds-vital meter::-webkit-meter-bar{background:#3d3441;border:0;border-radius:1px;height:7px}.ds-vital meter::-webkit-meter-optimum-value{background:#e5957a}.ds-vital.xp meter::-webkit-meter-optimum-value{background:#80d8c5}.ds-vital meter::-moz-meter-bar{background:#e5957a}.ds-vital.xp meter::-moz-meter-bar{background:#80d8c5}
+.ds-top button{width:35px;height:32px;padding:0;justify-content:center}.ds-stage{position:relative;background:#212734}.ds-stage>canvas{width:100%;height:auto;aspect-ratio:432/260;display:block;image-rendering:pixelated;touch-action:none;outline-offset:-3px}.ds-controls{min-height:40px}.ds-controls .ds-touch{display:none}
+.ds-rail{display:grid;gap:12px}.ds-countdown{font:bold 36px var(--mono);letter-spacing:-2px;color:var(--gold);margin:12px 0}.ds-stat{display:flex;align-items:center;justify-content:space-between;padding:6px 0;color:#c2b7c8;font-size:13px}.ds-stat b{color:#e4dddf;font-family:var(--mono)}.ds-stat+.ds-stat{border-top:1px solid #393344}
+.ds-load ul{list-style:none;margin:12px 0 0;padding:0}.ds-load li{display:flex;align-items:center;gap:8px;color:#e8dee7;font-size:13px;min-height:31px}.ds-load li b{margin-left:auto;color:#c7b5ce;font:11px var(--mono)}.ds-load canvas,.ds-choice canvas{image-rendering:pixelated}.ds-load canvas{width:24px;height:24px}
+.ds-dialog{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#10141de0;padding:10px;z-index:2}.ds-dialog section{width:min(510px,100%);max-height:100%;overflow:auto;text-align:center;padding:18px;border:1px solid #74665c;background:#24242f;border-radius:9px}.ds-dialog h2{margin:0;color:#ffdb9d;font-size:24px}.ds-dialog p{margin:4px 0 12px;color:#d0c9cf;font-size:14px}.ds-dialog .dialog-buttons:empty{display:none}
+#ds-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.ds-choice{font:inherit;text-align:left;display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0;background:#33333f;color:#f4e8dc;border:1px solid #6d625d;border-radius:5px;padding:10px}.ds-choice:hover,.ds-choice:focus-visible{border-color:#ffd497;background:#423b40}.ds-choice canvas{width:34px;height:34px}.ds-choice strong{font-size:14px;line-height:1.15}.ds-choice span{font-size:12px;color:#d7cbd0;line-height:1.3}.ds-choice small{color:#ffce8a;font:10px var(--mono);margin-top:auto;padding-top:3px}
+@media(max-width:900px){.shelf{gap:12px}.cart-body{padding:16px 12px 12px}.ds-layout{grid-template-columns:minmax(0,1fr) 166px;gap:10px}}
+@media(max-width:730px){.library{max-width:560px}.shelf{grid-template-columns:1fr}.cart-body p{min-height:0}.cart-body h2 canvas{height:19px}.dead-page{max-width:680px}.ds-layout{display:flex;flex-direction:column}.ds-machine,.ds-rail{width:100%}.ds-rail{grid-template-columns:1fr 1.3fr;gap:8px}.ds-rail>.restart{width:auto;grid-column:1/-1;height:34px}.ds-rail .panel{padding:10px 12px}.ds-countdown{font-size:25px;margin:4px 0}.ds-stat{padding:2px 0;font-size:12px}.ds-load ul{margin-top:5px}.ds-load li{min-height:25px}.ds-top{padding:8px;gap:9px}.ds-dialog section{padding:9px}.ds-dialog h2{font-size:18px}.ds-dialog p{font-size:12px;margin:2px 0 6px}.ds-choice{padding:7px;gap:3px}.ds-choice canvas{width:24px;height:24px}.ds-choice strong{font-size:12px}.ds-choice span{font-size:11px}.ds-choice small{font-size:9px}}
+@media(pointer:coarse){.ds-controls .ds-touch{display:inline-flex}.ds-controls .ds-desktop{display:none}}
+
 </style>
 
 </head>
@@ -51,7 +68,7 @@ a.brand,a.nav-btn,.cartridge{color:inherit;text-decoration:none}a:focus-visible{
 <a href="#library" id="menu-link" data-route="library" class="nav-btn" aria-label="Game library" hidden><span class="icon" data-icon="grid"></span><span class="nav-label">Game library</span></a><button id="sound" class="nav-btn" type="button" aria-pressed="true"><span id="sound-icon" class="icon"></span><span id="sound-label">Sound on</span></button>
 <button hidden id="help" aria-label="How to play" class="nav-btn" type="button"><span class="icon" data-icon="help"></span><span>How to play</span></button>
 </div></div></header>
-<main id="library-page" class="library"><div class="intro"><div class="title-line"><i class="spark spark-l" aria-hidden="true"></i><h1><canvas class="pixel-title" data-letters="GAME LIBRARY" aria-label="Game Library" role="img">Game Library</canvas></h1><i class="spark spark-r" aria-hidden="true"></i></div><p>Choose a game to play.</p></div><div class="shelf"><a class="cartridge orchard" href="#orchard-drop" data-route="orchard-drop" aria-label="Play Orchard Drop"><div class="game-cover"><canvas id="orchard-cover" width="720" height="420" role="img" aria-label="Orchard Drop gameplay preview"></canvas></div><div class="cart-body"><h2><canvas class="pixel-title" data-letters="ORCHARD DROP" aria-label="Orchard Drop" role="img">Orchard Drop</canvas></h2><p>Merge matching fruit to grow a watermelon.</p><div class="cart-foot"><span class="record"><span class="icon" data-icon="trophy"></span>Best <b id="orchard-record">0</b></span><span class="play-chip"><span class="icon" data-icon="play"></span>Play</span></div></div></a><a class="cartridge slice" href="#moonrise-slice" data-route="moonrise-slice" aria-label="Play Moonrise Slice"><div class="game-cover"><canvas id="slice-cover" width="720" height="420" role="img" aria-label="Moonrise Slice gameplay preview"></canvas></div><div class="cart-body"><h2><canvas class="pixel-title" data-letters="MOONRISE SLICE" aria-label="Moonrise Slice" role="img">Moonrise Slice</canvas></h2><p>Swipe through flying fruit and fill harvest orders.</p><div class="cart-foot"><span class="record"><span class="icon" data-icon="trophy"></span>Best <b id="slice-record">0</b></span><span class="play-chip"><span class="icon" data-icon="play"></span>Play</span></div></div></a></div></main>
+<main id="library-page" class="library"><div class="intro"><div class="title-line"><i class="spark spark-l" aria-hidden="true"></i><h1><canvas class="pixel-title" data-letters="GAME LIBRARY" aria-label="Game Library" role="img">Game Library</canvas></h1><i class="spark spark-r" aria-hidden="true"></i></div><p>Choose a game to play.</p></div><div class="shelf"><a class="cartridge dead" href="#dead-signal" data-route="dead-signal" aria-label="Play Dead Signal"><div class="game-cover"><canvas id="dead-cover" width="720" height="420" role="img" aria-label="Dead Signal gameplay in a neon-lit ruined city"></canvas></div><div class="cart-body"><h2><canvas class="pixel-title" data-letters="DEAD SIGNAL" aria-label="Dead Signal" role="img">Dead Signal</canvas></h2><p>Outlast the horde and choose gear as you level up.</p><div class="cart-foot"><span class="record"><span class="icon" data-icon="trophy"></span>Best <b id="dead-record">0</b></span><span class="play-chip"><span class="icon" data-icon="play"></span>Play</span></div></div></a><a class="cartridge orchard" href="#orchard-drop" data-route="orchard-drop" aria-label="Play Orchard Drop"><div class="game-cover"><canvas id="orchard-cover" width="720" height="420" role="img" aria-label="Orchard Drop gameplay preview"></canvas></div><div class="cart-body"><h2><canvas class="pixel-title" data-letters="ORCHARD DROP" aria-label="Orchard Drop" role="img">Orchard Drop</canvas></h2><p>Merge matching fruit to grow a watermelon.</p><div class="cart-foot"><span class="record"><span class="icon" data-icon="trophy"></span>Best <b id="orchard-record">0</b></span><span class="play-chip"><span class="icon" data-icon="play"></span>Play</span></div></div></a><a class="cartridge slice" href="#moonrise-slice" data-route="moonrise-slice" aria-label="Play Moonrise Slice"><div class="game-cover"><canvas id="slice-cover" width="720" height="420" role="img" aria-label="Moonrise Slice gameplay preview"></canvas></div><div class="cart-body"><h2><canvas class="pixel-title" data-letters="MOONRISE SLICE" aria-label="Moonrise Slice" role="img">Moonrise Slice</canvas></h2><p>Swipe through flying fruit and fill harvest orders.</p><div class="cart-foot"><span class="record"><span class="icon" data-icon="trophy"></span>Best <b id="slice-record">0</b></span><span class="play-chip"><span class="icon" data-icon="play"></span>Play</span></div></div></a></div></main>
 <main id="orchard-page" hidden>
 <div class="intro"><div class="title-line"><i class="spark spark-l" aria-hidden="true"></i><h1><canvas data-letters="ORCHARD DROP" class="pixel-title" aria-label="Orchard Drop" role="img"></canvas></h1><i class="spark spark-r" aria-hidden="true"></i></div><p>Drop fruit. Merge pairs. Grow a watermelon.</p></div>
 <div class="console">
@@ -78,8 +95,26 @@ a.brand,a.nav-btn,.cartridge{color:inherit;text-decoration:none}a:focus-visible{
 <section class="game-shell" aria-label="Moonrise Slice play area"><div class="scene slice-scene"><canvas id="slice-game" width="720" height="460" tabindex="0" role="application" aria-label="Drag to slice fruit. Press 1, 2 or 3 to cut the left, centre or right lane. P pauses."></canvas>
 <div class="clock-chip"><span class="icon" data-icon="time"></span><span id="slice-time">1:00</span></div><button id="slice-pause" class="pause-btn" aria-label="Pause game"><span class="icon" data-icon="pause"></span></button>
 <div class="overlay" id="slice-overlay" hidden><div class="overlay-card" role="dialog" aria-labelledby="slice-message" aria-modal="true"><span class="icon lilac" data-icon="swipe"></span><h2 id="slice-message"></h2><p id="slice-copy"></p><div class="dialog-buttons" id="slice-actions"></div></div></div></div>
-<div class="control-strip slice-controls"><span><span class="icon" data-icon="swipe"></span>Drag to slice</span><i class="keyboard-hint"></i><span class="keyboard-hint"><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd>Cut a lane</span><i class="keyboard-hint"></i><span class="keyboard-hint"><kbd>P</kbd>Pause</span></div></section></div><div class="sr" id="slice-announcer" aria-live="polite"></div></main><script>
+<div class="control-strip slice-controls"><span><span class="icon" data-icon="swipe"></span>Drag to slice</span><i class="keyboard-hint"></i><span class="keyboard-hint"><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd>Cut a lane</span><i class="keyboard-hint"></i><span class="keyboard-hint"><kbd>P</kbd>Pause</span></div></section></div><div class="sr" id="slice-announcer" aria-live="polite"></div></main>
 
+
+
+
+
+
+<main id="dead-page" class="dead-page" hidden>
+<div class="intro"><div class="title-line"><i class="spark" aria-hidden="true"></i><h1><canvas data-letters="DEAD SIGNAL" class="pixel-title" aria-label="Dead Signal" role="img">Dead Signal</canvas></h1><i class="spark" aria-hidden="true"></i></div><p>Hold the intersection until the rescue signal comes through.</p></div>
+<div class="ds-layout">
+<section class="ds-machine" aria-label="Dead Signal survival game">
+<div class="ds-top"><div class="ds-vital"><span>Health <b id="ds-hp">100 / 100</b></span><meter id="ds-health" min="0" max="100" value="100" aria-label="Health"></meter></div><div class="ds-vital xp"><span>Level <b id="ds-level">1</b><small id="ds-xp">0 / 12 XP</small></span><meter id="ds-progress" min="0" max="12" value="0" aria-label="Experience"></meter></div><button id="ds-pause" class="nav-btn" aria-label="Pause game"><span class="icon" data-icon="pause"></span></button></div>
+<div class="ds-stage" id="ds-stage"><canvas id="ds-board" width="432" height="260" tabindex="0" aria-label="Zombie survival arena. Move with W A S D, arrow keys, or drag. Your pulse caster fires automatically." role="application"></canvas>
+<div class="ds-dialog" id="ds-dialog" hidden><section id="ds-dialog-box" role="dialog" aria-modal="true" aria-labelledby="ds-dialog-title"><h2 id="ds-dialog-title"></h2><p id="ds-dialog-text"></p><div id="ds-options"></div><div id="ds-actions" class="dialog-buttons"></div></section></div>
+</div><div class="control-strip ds-controls"><span class="ds-desktop"><kbd>WASD</kbd> or <kbd>↑↓←→</kbd> Move</span><span class="ds-touch">Drag to move</span><i></i><span>Auto-fire</span><i class="ds-desktop"></i><span class="ds-desktop"><kbd>P</kbd> Pause</span></div></section>
+<aside class="ds-rail"><section class="panel"><h2><span class="icon accent" data-icon="time"></span>Rescue signal</h2><div id="ds-clock" class="ds-countdown">3:00</div><div class="ds-stat"><span>Wave</span><b id="ds-wave">1 / 5</b></div><div class="ds-stat"><span>Zombies cleared</span><b id="ds-kills">0</b></div></section>
+<section class="panel ds-load"><h2><span class="icon lilac" data-icon="grid"></span>Equipped gear</h2><ul id="ds-loadout"></ul></section>
+<button type="button" class="restart" id="ds-reset"><span class="icon" data-icon="reset"></span>New run</button></aside></div><div id="ds-live" class="sr" aria-live="polite"></div></main>
+
+<script>
 "use strict";
 const fruitTypes=[
  {name:"Cherry",r:16,base:"#f25172",hi:"#ffb3b2",shade:"#b3325a",dark:"#732744",glow:"#ff6888"},
@@ -183,10 +218,8 @@ function landscape(){
  return v;
 }
 
-
 </script>
 <script>
-
 "use strict";
 const jar={left:105,right:495,bottom:463,limit:145,spawn:65};
 class OrchardWorld{
@@ -236,10 +269,8 @@ class OrchardWorld{
  }
 }
 
-
 </script>
 <script>
-
 "use strict";
 const $=id=>document.getElementById(id);
 let arcadeView = null, orchardFrame = 0;
@@ -361,10 +392,8 @@ function frame(t){const elapsed=last?Math.min(.05,(t-last)/1000):0;last=t;if(mod
  aim+=((keys.has('ArrowRight')?1:0)-(keys.has('ArrowLeft')?1:0))*270*dt;clampAim();world.tick(dt);updateFx(dt);if(world.over){dialog('over');acc=0;break}}}else acc=0;draw();orchardFrame=requestAnimationFrame(frame)}
 scoreUI();nextUI();status();
 
-
 </script>
 <script>
-
 /* Pixel art for the moon orchard and freshly cut fruit. */
 function moonOrchard(){
  const v=makeCanvas(360,230),c=v.getContext('2d'),rand=seeded(17072);
@@ -439,7 +468,6 @@ function orchardCover(c){
 
 </script>
 <script>
-
 class MoonRound {
  constructor(random=Math.random){this.random=random;this.reset()}
  reset(){
@@ -501,7 +529,6 @@ class MoonRound {
 
 </script>
 <script>
-
 const Moonrise=(()=>{
  const canvas=$('slice-game'),c=canvas.getContext('2d'),round=new MoonRound(),scoreImage=makeCanvas(140,28);
  $('slice-score').append(scoreImage);
@@ -648,9 +675,414 @@ const Moonrise=(()=>{
 
 </script>
 <script>
+"use strict";
+const signalGear={
+ twin:{name:"Twin emitter",desc:"Fire one more bolt per volley.",colour:"#e4b6ed"},
+ coil:{name:"Arc coil",desc:"Bolts arc to another nearby zombie.",colour:"#92e5df"},
+ core:{name:"Power cell",desc:"Add 4 damage to every bolt.",colour:"#fcbe83"},
+ relay:{name:"Pulse relay",desc:"Fire 20% faster per rank.",colour:"#a8c6fb"},
+ boots:{name:"Runner boots",desc:"Move 10% faster per rank.",colour:"#c4e290"},
+ armour:{name:"Rescue vest",desc:"Add 25 max health and recover 40 HP.",colour:"#e5a58f"},
+ magnet:{name:"Salvage magnet",desc:"Pull in XP cells from farther away.",colour:"#e1b9e3"},
+ drone:{name:"Orbit drone",desc:"Add an orbiting drone that hits zombies.",colour:"#9fdccd"}
+};
+const signalBounds={left:8,right:424,top:71,bottom:240};
+class SignalRun{
+ constructor(random=Math.random){this.random=random;this.reset()}
+ reset(){
+   this.phase="play";this.time=0;this.health=100;this.maxHealth=100;this.x=216;this.y=155;this.face=1;this.walk=0;this.moving=false;
+   this.level=1;this.xp=0;this.required=12;this.picks=0;this.offers=[];this.gear={};
+   this.kills=0;this.score=0;this.wave=1;this.hurt=0;this.shot=0;this.cooldown=.15;this.spawnIn=1.5;this.waveFlash=2.2;this.serial=0;
+   this.enemies=[];this.bolts=[];this.cells=[];this.effects=[];this.bursts=[];
+   [[149,153],[291,132],[95,212],[368,206]].forEach(([x,y])=>this.spawn(x,y,"walker"));
+ }
+ rank(key){return this.gear[key]||0}
+ get speed(){return 67*(1+.1*this.rank("boots"))}
+ get interval(){return .74/(1+.2*this.rank("relay"))}
+ get damage(){return 10+4*this.rank("core")}
+ get reach(){return 23+18*this.rank("magnet")}
+ spawn(x,y,type){
+   const rng=this.random;
+   if(x===undefined){
+     const edge=Math.floor(rng()*4);
+     x=edge===0?-9:edge===1?441:12+rng()*408;y=edge===2?59:edge===3?254:77+rng()*157;
+     if(Math.hypot(this.x-x,this.y-y)<49){x=432-x;y=320-y}
+   }
+   if(!type){const u=rng();type=this.wave>=3&&u<.16?"brute":this.wave>=2&&u<.43?"runner":"walker"}
+   const w=this.wave;
+   this.enemies.push({id:++this.serial,x,y,type,hp:(type==="brute"?33:type==="runner"?7:9)+2*(w-1),
+     speed:(type==="brute"?10:type==="runner"?27:13)+1.2*w+3*rng(),r:type==="brute"?7.4:5,
+     seed:rng()*6.28,flash:0,orbitLock:0});
+ }
+ nearest(x,y,except=null,range=Infinity){
+   let target=null,d2=range*range;
+   for(const e of this.enemies){if(e.hp<=0||except?.has(e.id))continue;const dx=e.x-x,dy=e.y-y,d=dx*dx+dy*dy;if(d<d2){d2=d;target=e}}
+   return target;
+ }
+ volley(){
+   const first=this.nearest(this.x,this.y,null,170);if(!first)return false;
+   const count=1+this.rank("twin"),used=new Set();
+   for(let i=0;i<count;i++){
+     const e=i===0?first:this.nearest(this.x,this.y,used,170);const target=e||first;used.add(target.id);
+     const a=Math.atan2(target.y-this.y,target.x-this.x)+(e?0:(i%2?1:-1)*Math.ceil(i/2)*.045);
+     this.bolts.push({x:this.x+Math.cos(a)*6,y:this.y-3+Math.sin(a)*6,vx:Math.cos(a)*226,vy:Math.sin(a)*226,life:.81});
+   }
+   if(!this.moving)this.face=first.x>=this.x?1:-1;this.shot=.13;return true;
+ }
+ hit(e,damage){
+   if(e.hp<=0)return;e.hp-=damage;e.flash=.12;
+   if(e.hp<=0){
+     const elite=e.type==="brute";this.kills++;this.score+=elite?35:e.type==="runner"?16:10;
+     this.xp+=elite?5:2;this.cells.push({x:e.x,y:e.y,value:elite?10:4,seed:e.seed});
+     this.bursts.push({x:e.x,y:e.y,age:0,seed:e.seed});
+   }
+ }
+ moveBolts(dt){
+   for(const b of this.bolts){
+     const ox=b.x,oy=b.y;b.x+=b.vx*dt;b.y+=b.vy*dt;b.life-=dt;
+     const dx=b.x-ox,dy=b.y-oy,len=dx*dx+dy*dy;let victim=null,near=2;
+     for(const e of this.enemies){
+       if(e.hp<=0)continue;
+       const t=Math.max(0,Math.min(1,((e.x-ox)*dx+(e.y-3-oy)*dy)/(len||1)));
+       if(t<near&&Math.hypot(ox+t*dx-e.x,oy+t*dy-e.y+3)<e.r+2.5){near=t;victim=e}
+     }
+     if(!victim)continue;
+     b.life=0;this.hit(victim,this.damage);const used=new Set([victim.id]);let from=victim;
+     for(let n=0;n<this.rank("coil");n++){
+       const to=this.nearest(from.x,from.y,used,42);
+       if(!to)break;used.add(to.id);this.effects.push({x:from.x,y:from.y-3,tx:to.x,ty:to.y-3,life:.14});
+       this.hit(to,this.damage*.72);from=to;
+     }
+   }
+   this.bolts=this.bolts.filter(b=>b.life>0&&b.x>-8&&b.x<440&&b.y>47&&b.y<257);
+ }
+ dronePosition(index){
+   const angle=this.time*2.6+index*2*Math.PI/Math.max(1,this.rank("drone"));
+   return {x:this.x+Math.cos(angle)*22,y:this.y-3+Math.sin(angle)*18};
+ }
+ advanceEnemies(dt){
+   for(const e of this.enemies){
+     if(e.hp<=0)continue;e.flash=Math.max(0,e.flash-dt);e.orbitLock=Math.max(0,e.orbitLock-dt);
+     const dx=this.x-e.x,dy=this.y-e.y,d=Math.hypot(dx,dy)||.001;
+     e.x+=dx/d*e.speed*dt;e.y+=dy/d*e.speed*dt;
+     for(let n=0;n<this.rank("drone")&&!e.orbitLock;n++){
+       const p=this.dronePosition(n);
+       if(Math.hypot(p.x-e.x,p.y-e.y)<e.r+5){this.hit(e,8+2*this.rank("drone"));e.orbitLock=.46}
+     }
+     if(e.hp>0&&d<e.r+4&&this.hurt<=0){
+       this.health=Math.max(0,this.health-(e.type==="brute"?23:14));this.hurt=.94;
+       e.x-=dx/d*11;e.y-=dy/d*11;
+       if(this.health===0){this.phase="lost";return}
+     }
+   }
+   // A small separation keeps the pursuing silhouettes readable inside a horde.
+   for(let i=0;i<this.enemies.length;i++)for(let j=i+1;j<this.enemies.length;j++){
+     const a=this.enemies[i],b=this.enemies[j],dx=b.x-a.x,dy=b.y-a.y,d2=dx*dx+dy*dy;
+     if(d2>=49||d2<.001)continue;const d=Math.sqrt(d2),scale=(7-d)*Math.min(.2,5*dt)/d;
+     a.x-=dx*scale;a.y-=dy*scale;b.x+=dx*scale;b.y+=dy*scale;
+   }
+ }
+ collect(dt){
+   for(const cell of this.cells){
+     const dx=this.x-cell.x,dy=this.y-cell.y,d=Math.hypot(dx,dy);
+     if(d<7){this.xp+=cell.value;cell.value=0}
+     else if(d<this.reach){const step=Math.min(d,dt*92);cell.x+=dx/d*step;cell.y+=dy/d*step}
+   }
+   this.cells=this.cells.filter(c=>c.value>0);
+ }
+ checkLevel(){
+   if(this.xp<this.required||this.phase!=="play")return;
+   this.xp-=this.required;this.level++;this.required=12+(this.level-1)*7;
+   const pool=Object.keys(signalGear);this.offers=[];
+   for(let i=0;i<3;i++)this.offers.push(pool.splice(Math.floor(this.random()*pool.length),1)[0]);
+   this.phase="gear";
+ }
+ equip(key){
+   if(this.phase!=="gear"||!this.offers.includes(key))return false;
+   this.gear[key]=this.rank(key)+1;this.picks++;
+   if(key==="armour"){this.maxHealth+=25;this.health=Math.min(this.maxHealth,this.health+40)}
+   this.phase="play";this.hurt=Math.max(.65,this.hurt);this.offers=[];this.checkLevel();return true;
+ }
+ step(dt,input={x:0,y:0}){
+   if(this.phase!=="play"||dt<=0)return;this.time+=dt;
+   if(this.time>=180){this.time=180;this.phase="won";this.score+=500;return}
+   const wave=1+Math.floor(this.time/36);if(wave!==this.wave){this.wave=wave;this.waveFlash=2.4}
+   this.waveFlash=Math.max(0,this.waveFlash-dt);this.hurt=Math.max(0,this.hurt-dt);this.shot=Math.max(0,this.shot-dt);
+   const m=Math.hypot(input.x,input.y),norm=Math.max(1,m);this.moving=m>.05;
+   if(this.moving){this.x+=input.x/norm*this.speed*dt;this.y+=input.y/norm*this.speed*dt;this.walk+=dt*10;if(Math.abs(input.x)>.1)this.face=Math.sign(input.x)}
+   this.x=Math.max(signalBounds.left,Math.min(signalBounds.right,this.x));this.y=Math.max(signalBounds.top,Math.min(signalBounds.bottom,this.y));
+   this.spawnIn-=dt;if(this.spawnIn<=0){if(this.enemies.length<62){this.spawn();if(this.wave>=4)this.spawn()}this.spawnIn=(1.9-.23*this.wave)*(.87+.26*this.random())}
+   this.cooldown-=dt;if(this.cooldown<=0)this.cooldown=this.volley()?this.interval:.08;
+   this.moveBolts(dt);this.advanceEnemies(dt);this.enemies=this.enemies.filter(e=>e.hp>0);
+   this.effects.forEach(f=>f.life-=dt);this.effects=this.effects.filter(f=>f.life>0);
+   this.bursts.forEach(b=>b.age+=dt);this.bursts=this.bursts.filter(b=>b.age<.34);
+   if(this.phase==="play"){this.collect(dt);this.checkLevel()}
+ }
+}
 
+</script>
+<script>
+"use strict";
+const SignalArt=(()=>{
+ const W=432,H=260,rand=seeded(60429);
+ function block(c,x,y,w,h,col){c.fillStyle=col;c.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))}
+ function pixLine(c,x0,y0,x1,y1,col,size=1){
+   const n=Math.max(1,Math.ceil(Math.max(Math.abs(x1-x0),Math.abs(y1-y0))));
+   for(let i=0;i<=n;i++)block(c,x0+(x1-x0)*i/n,y0+(y1-y0)*i/n,size,size,col);
+ }
+ function halo(c,x,y,r,colour){const glow=c.createRadialGradient(x,y,0,x,y,r);glow.addColorStop(0,colour);glow.addColorStop(1,'#00000000');c.fillStyle=glow;c.fillRect(x-r,y-r,r*2,r*2)}
+ function car(c,x,y,col){
+   block(c,x-1,y+3,42,12,'#1c202b');block(c,x+3,y+1,33,12,'#171b25');
+   block(c,x+1,y+5,39,7,col);block(c,x+6,y+2,25,9,col);block(c,x+10,y,18,4,col);
+   block(c,x+8,y+3,7,4,'#627a82');block(c,x+16,y+2,10,4,'#344554');
+   block(c,x+9,y+3,4,1,'#acc0b9');block(c,x+28,y+6,10,1,'#988471');
+   block(c,x+4,y+10,7,4,'#20232d');block(c,x+29,y+10,7,4,'#20232d');
+   block(c,x+5,y+11,4,2,'#51545c');block(c,x+30,y+11,4,2,'#51545c');
+   block(c,x+37,y+7,3,2,'#eed1a1');block(c,x+1,y+7,2,2,'#b56565');
+ }
+ function backdrop(){
+   const a=makeCanvas(W,H),c=a.getContext('2d');
+   const sky=c.createLinearGradient(0,0,0,57);sky.addColorStop(0,'#24283d');sky.addColorStop(1,'#9d7480');c.fillStyle=sky;c.fillRect(0,0,W,63);
+   for(let i=0;i<70;i++)block(c,rand()*W,rand()*26,1,1,i%3?'#8d8496':'#b9a9a4');
+   halo(c,338,15,29,'#facf9f37');
+   for(let y=-10;y<=10;y++){const dx=Math.floor(Math.sqrt(100-y*y));block(c,338-dx,15+y,2*dx+1,1,y<2?'#ead2ad':'#d1ac9e')}
+   for(let x=-2;x<W;){const w=4+Math.floor(rand()*11),h=5+rand()*23;block(c,x,39-h,w,h,'#454052');
+     for(let j=0;j<5;j++)block(c,x+rand()*w,39-rand()*h,1,1,'#977e84');x+=w+2}
+   const buildings=[[0,12,52,'#4e4857'],[53,26,44,'#535561'],[98,17,62,'#514c5e'],[162,29,81,'#635862'],[245,20,51,'#454756'],[301,33,45,'#565260'],[349,25,39,'#55535f'],[391,12,48,'#484755']];
+   for(const [x,y,w,col] of buildings){
+     block(c,x+2,y-3,w-5,4,'#343746');block(c,x,y,w,59-y,col);block(c,x,y,w,2,'#7d7481');block(c,x+1,y+3,3,56-y,'#403b4d');
+     for(let wx=x+7;wx<x+w-5;wx+=10)for(let wy=y+6;wy<49;wy+=11){
+       block(c,wx-1,wy-1,7,8,'#383543');block(c,wx,wy,5,5,rand()>.7?'#a28b83':'#59606e');block(c,wx+2,wy,1,5,'#464855');block(c,wx,wy+3,5,1,'#434551');
+     }
+     block(c,x+7,48,w-13,10,'#343b49');for(let i=0;i<4;i++)block(c,x+7,48+i*3,w-14,1,'#55515c');
+     block(c,x+w-11,46,7,13,'#242a36');block(c,x+w-9,52,1,1,'#cdad8b');
+   }
+   // A beacon shop and its lit sign anchor the north edge of the intersection.
+   block(c,161,29,80,10,'#292a38');block(c,161,38,80,2,'#9f7969');
+   const sign=makeCanvas(1,1);pixelLetters(sign,'RELAY','#f6c885',1);c.drawImage(sign,180,30);
+   block(c,157,41,89,4,'#a1756b');for(let x=159;x<245;x+=9)block(c,x,42,4,3,'#70545e');
+   block(c,86,26,10,14,'#1f363a');block(c,89,28,3,9,'#9fdac0');block(c,86,31,9,3,'#b4e6c7');
+   block(c,0,57,W,9,'#706b75');block(c,0,62,W,3,'#827b7d');block(c,0,65,W,3,'#3e414d');
+   for(let x=0;x<W;x+=17)block(c,x,58,1,7,'#5b5864');
+   block(c,0,68,W,177,'#3f4553');
+   for(let y=68;y<244;y+=3)block(c,0,y,W,1,y%2?'#404653':'#404753');
+   // Tarmac, worn paint, utility covers and storm grates all share the sprite pixel grid.
+   for(let i=0;i<2300;i++)block(c,rand()*W,69+rand()*174,rand()*2+1,1,['#464b57','#4d515b','#39404d','#565760'][i%4]);
+   for(const x of [86,318])for(let y=85;y<232;y+=13){block(c,x,y,15,6,'#797b7c');block(c,x+2,y+5,12,1,'#666b70');for(let n=0;n<5;n++)block(c,x+rand()*14,y+rand()*5,2,1,'#555b65')}
+   for(let x=-4;x<W;x+=29){if(x>80&&x<340)continue;block(c,x,153,15,2,'#ba9f71');block(c,x+3,157,13,1,'#8b826f')}
+   for(const [x,y] of [[120,122],[300,195],[55,215],[364,103],[221,221],[274,76],[10,165]]){
+     let px=x,py=y;for(let i=0;i<6;i++){const nx=px+3+rand()*6,ny=py+rand()*6-3;pixLine(c,px,py,nx,ny,'#2e3543');if(i===3)pixLine(c,px,py,px+4,py-5,'#343b48');px=nx;py=ny}
+   }
+   for(const [x,y] of [[46,78],[278,227],[382,86]]){block(c,x,y,14,5,'#2b323f');for(let i=0;i<6;i++)block(c,x+1+i*2,y+1,1,3,'#515660')}
+   for(let i=0;i<16;i++){let x=rand()*W,y=75+rand()*158;block(c,x,y,3,2,'#9a9890');block(c,x+2,y+1,2,1,'#72737a')}
+   for(const [x,y] of [[36,104],[358,198]]){block(c,x,y,25,1,'#58747e');block(c,x+4,y-1,15,1,'#59707c');block(c,x+9,y+1,20,1,'#4b5c6b')}
+   block(c,0,243,W,3,'#8b7f7e');block(c,0,246,W,14,'#5e5a65');for(let x=0;x<W;x+=20)block(c,x,247,1,13,'#484957');
+   car(c,13,52,'#977b59');car(c,351,51,'#637b79');car(c,26,246,'#726478');
+   for(const [x,y] of [[123,61],[256,61],[337,249]]){block(c,x,y-17,2,17,'#282c39');block(c,x-4,y-18,7,2,'#30323f');block(c,x-4,y-17,4,2,'#efbb83');halo(c,x-2,y-16,10,'#ffa96c4a')}
+   for(const x of [5,407]){block(c,x,6,3,55,'#30303a');block(c,x-5,11,13,2,'#4b434d')}
+   for(let j=0;j<2;j++)for(let x=0;x<W;x++)block(c,x,9+j*4+6*Math.sin(x/W*Math.PI),1,1,'#3a3746');
+   return a;
+ }
+ const bg=backdrop();
+ const hero=[
+ '       oo       ','     oohhoo     ','    ohhhhhoo    ','    ohahahho    ','     kcccco     ','   ooobbbooo    ','   ofaaafffo    ','  ofaffffboo    ','  otbffbbbot    ','   oobbboooo    ','    odddddo     ','    oddoddo     ','    okk okko    '];
+ const zombie=[
+ '       bb       ','     bbbbbb     ','    bggggggb    ','    bgsggsgb    ','     gggggg     ','      gkkg      ','   bbbbbbbbb    ','  bgjvjjvjjgb   ','   gjjjjjjjgg   ','    bjjjjjb     ','     ppppp      ','     pp pp      ','    bbb bbb     '];
+ const runner=[
+ '      bbbb      ','     bggggb     ','     ggsgsb     ','     ggggg      ','      gkg       ','   bbbjjbb      ','  bgjvjvvjgb    ','   gjjjjjjgg    ','    bbjjjbb     ','     pppp       ','    bpp pp      ','    bb   bb     '];
+ const brute=[
+ '      bbbbbb      ','     bggggggb     ','     bggggggb     ','     bgsggsgb     ','      gggggg      ','     bbggggbb     ','   bbjjvvjjjjbb   ','  bgjjjjjjjjjjgb  ','  ggjjjjjjjjjjgg  ','  gg bjvvvjjb gg  ','      bjjjjb      ','     bppppppb     ','     bpp  ppb     ','     bbb  bbb     '];
+ function figure(rows,col){
+   const v=makeCanvas(rows[0].length,rows.length),c=v.getContext('2d');runPixels(c,rows,col);return v;
+ }
+ const person=figure(hero,{o:'#202535',h:'#f6a96a',a:'#ffcf82',k:'#574645',c:'#abe7e3',b:'#38455c',f:'#6684a1',t:'#e9bc96',d:'#495369'});
+ function zombieSprite(rows,body,shirt,skin,bright){return figure(rows,{b:'#202c39',g:skin,s:bright,k:'#3c5050',j:shirt,v:body,p:'#384356'})}
+ const sprites={walker:zombieSprite(zombie,'#7d9c90','#526e76','#9abb8c','#f6d4aa'),runner:zombieSprite(runner,'#b08887','#9b6b76','#b5be86','#fff0a3'),brute:zombieSprite(brute,'#728e85','#647581','#8eb49b','#ffb37b')};
+ function actor(c,im,x,y,scale,face,step,lit=false){
+   const w=im.width*scale,h=im.height*scale,dy=Math.round(step);
+   c.fillStyle='#2226378c';c.fillRect(Math.round(x-w*.32),Math.round(y-1),Math.round(w*.67),Math.max(2,scale*2));
+   c.save();c.translate(Math.round(x),Math.round(y+dy));c.scale(face<0?-scale:scale,scale);c.imageSmoothingEnabled=false;
+   c.drawImage(im,-Math.floor(im.width/2),-im.height);if(lit){c.fillStyle='#ffe8b8';c.fillRect(0,-im.height+4,2,1)}c.restore();
+ }
+ function drawHero(c,x,y,face,step,shine,scale=1.22){
+   actor(c,person,x,y,scale,face,step);const tip=x+face*8*scale;
+   block(c,face>0?x+3*scale:x-9*scale,y-6*scale,7*scale,3*scale,'#394358');block(c,face>0?x+4*scale:x-9*scale,y-7*scale,6*scale,2*scale,'#accbc9');
+   block(c,tip,y-6*scale,2*scale,2*scale,shine?'#fff7ce':'#8be4da');
+   if(shine)halo(c,tip,y-6*scale,7*scale,'#87f4d670');
+ }
+ function drawZombie(c,e,face,t,scale=1.25){
+   const walk=Math.sin(t*(e.type==="runner"?12:7)+e.seed);
+   actor(c,sprites[e.type],e.x,e.y,scale,face,walk>.53?-1:0,e.flash>.03);
+   if(e.flash>.06)block(c,e.x+2,e.y-9,2,2,'#fff1cd');
+ }
+ function cell(c,x,y,t){const a=Math.round(Math.sin(t)*.8);block(c,x-3,y+a,6,2,'#467b80');block(c,x-2,y-2+a,4,4,'#78ddc8');block(c,x-1,y-3+a,2,6,'#91e7ca');block(c,x-1,y-2+a,2,2,'#e5ffcf')}
+ const icons={
+ caster:['  aaa   ',' ccccca ','  ccccca','    bbb ','    bb  '],twin:[' aa  aa ','ccc ccc ',' cc  cc ',' bb  bb ',' b   b  '],
+ coil:['  aaaa ',' accca ','  ccc  ','   ca  ','  cc   ',' ca    '],core:['   aa  ','  cccc ',' caccac',' cccccc','  cccc ','   aa  '],
+ relay:[' cc cc ',' cc cc ','  aaa  ',' acaca ','  aaa  ','  b b  '],boots:['  ccc  ','  cac  ',' bccc  ',' bcccca',' bbbbbb'],
+ armour:[' cc cc ','ccccccc','caaaacc',' ccaac ',' ccccc ','  ccc  '],magnet:[' aa  aa ',' cc  cc ',' cc  cc ',' cccccc ','  cccc  '],
+ drone:['   a   ','c  c  c','ccacacc','  ccc  ','cc   cc']
+ };
+ function gearIcon(canvas,id){
+   canvas.width=24;canvas.height=24;const c=canvas.getContext('2d'),rows=icons[id],col=signalGear[id]?.colour||'#99e8df';
+   c.fillStyle='#282e3d';c.fillRect(0,0,24,24);c.save();c.translate(Math.floor((24-(rows[0].length*2))/2),Math.floor((24-rows.length*2)/2));c.scale(2,2);
+   runPixels(c,rows,{a:'#fff0cb',c:col,b:'#596372'});c.restore();
+ }
+ function scene(c,r,stick){
+   c.imageSmoothingEnabled=false;c.drawImage(bg,0,0);
+   for(const p of r.cells)cell(c,p.x,p.y,r.time*4+p.seed);
+   const figures=r.enemies.map(e=>({y:e.y,e}));figures.push({y:r.y});figures.sort((a,b)=>a.y-b.y);
+   for(const {e} of figures){if(e)drawZombie(c,e,e.x>r.x?-1:1,r.time);else if(r.hurt<.05||Math.floor(r.hurt*15)%2===0)drawHero(c,r.x,r.y,r.face,r.moving&&Math.sin(r.walk)>.4?-1:0,r.shot>0)}
+   for(let i=0;i<r.rank('drone');i++){const p=r.dronePosition(i);block(c,p.x-4,p.y-2,8,3,'#5c8795');block(c,p.x-2,p.y-3,4,5,'#a9d6cf');block(c,p.x,p.y-2,2,2,'#fbedad')}
+   for(const b of r.bolts){pixLine(c,b.x-b.vx*.028,b.y-b.vy*.028,b.x,b.y,'#70c6c6',2);block(c,b.x,b.y,3,2,'#deffda')}
+   for(const f of r.effects){const mx=(f.x+f.tx)/2,my=(f.y+f.ty)/2-3;pixLine(c,f.x,f.y,mx,my,'#b2fff0');pixLine(c,mx,my,f.tx,f.ty,'#c4fbec')}
+   for(const b of r.bursts){for(let i=0;i<7;i++){const a=b.seed+i*.898,dist=b.age*31;block(c,b.x+Math.cos(a)*dist,b.y-7+Math.sin(a)*dist,2,2,i%3?'#b4b795':'#dae2bd')}}
+   if(r.waveFlash>0){c.save();c.globalAlpha=Math.min(1,r.waveFlash*2);block(c,176,7,80,14,'#1f2533e8');c.fillStyle='#fce2a7';c.font='bold 8px monospace';c.textAlign='center';c.fillText('WAVE 0'+r.wave+' / 05',216,17);c.restore()}
+   if(stick){c.save();c.strokeStyle='#d8f4dd99';c.lineWidth=1.5;c.beginPath();c.arc(stick.x,stick.y,15,0,Math.PI*2);c.stroke();c.fillStyle='#c3f4d59c';c.fillRect(stick.x+stick.dx*12-3,stick.y+stick.dy*12-3,6,6);c.restore()}
+ }
+ function cover(canvas){
+   const c=canvas.getContext('2d');c.setTransform(canvas.width/W,0,0,canvas.height/H,0,0);c.imageSmoothingEnabled=false;c.drawImage(bg,0,0);
+   for(const [x,y,t] of [[90,115,'walker'],[344,112,'runner'],[290,149,'walker'],[82,192,'brute'],[342,192,'walker'],[149,207,'runner'],[383,208,'walker']])drawZombie(c,{x,y,type:t,seed:x,flash:0},x>215?-1:1,0,2.25);
+   cell(c,179,172,0);cell(c,254,189,1);drawHero(c,211,168,1,0,true,2.8);
+   pixLine(c,241,147,257,145,'#83cbc9',3);pixLine(c,248,146,264,143,'#daffdd',2);block(c,266,142,4,2,'#efffca');
+   halo(c,233,148,19,'#89f1cf45');
+ }
+ return {scene,cover,gearIcon};
+})();
+
+</script>
+<script>
+"use strict";
+const DeadSignal=(()=>{
+ const el=id=>document.getElementById('ds-'+id),board=el('board'),ctx=board.getContext('2d');
+ const run=new SignalRun(),held=new Set();let best=Math.max(0,parseInt(stored('signal.best','0'),10)||0);
+ let frame=0,last=0,screen=null,returnScreen=null,stick=null,uiStamp='',gearStamp='',timeLabel='';
+ function gearCanvas(key){const c=document.createElement('canvas');c.setAttribute('aria-hidden','true');SignalArt.gearIcon(c,key);return c}
+ function loadout(){
+   const signature=JSON.stringify(run.gear);if(gearStamp===signature)return;gearStamp=signature;
+   const list=el('loadout');list.replaceChildren();
+   for(const [id,count] of [['caster',1],...Object.entries(run.gear)]){
+     const li=document.createElement('li'),name=document.createElement('span'),rank=document.createElement('b');
+     name.textContent=signalGear[id]?.name||'Pulse caster';rank.textContent='R'+count;
+     li.append(gearCanvas(id),name,rank);list.append(li);
+   }
+ }
+ function hud(){
+   const seconds=Math.ceil(Math.max(0,180-run.time)),clock=Math.floor(seconds/60)+':'+String(seconds%60).padStart(2,'0');
+   if(clock!==timeLabel){el('clock').textContent=clock;timeLabel=clock}
+   if(run.score>best){best=run.score;save('signal.best',String(best))}
+   const key=[run.health,run.maxHealth,run.xp,run.level,run.wave,run.kills].join('/');
+   if(key!==uiStamp){
+     el('hp').textContent=run.health+' / '+run.maxHealth;el('health').max=run.maxHealth;el('health').value=run.health;
+     el('xp').textContent=run.xp+' / '+run.required+' XP';el('level').textContent=run.level;el('progress').max=run.required;el('progress').value=Math.min(run.xp,run.required);
+     el('wave').textContent=run.wave+' / 5';el('kills').textContent=run.kills;uiStamp=key;
+   }
+   loadout();
+ }
+ function stopFrame(){cancelAnimationFrame(frame);frame=0;last=0}
+ function clearInput(){held.clear();stick=null}
+ function startFrame(){stopFrame();if(arcadeView==='dead-signal')frame=requestAnimationFrame(loop)}
+ function moveVector(){
+   if(stick)return {x:stick.dx,y:stick.dy};
+   const has=(a,b)=>held.has(a)||held.has(b);
+   return {x:Number(has('KeyD','ArrowRight'))-Number(has('KeyA','ArrowLeft')),y:Number(has('KeyS','ArrowDown'))-Number(has('KeyW','ArrowUp'))};
+ }
+ function loop(t){
+   if(arcadeView!=='dead-signal'||screen||run.phase!=='play')return;
+   let elapsed=last?Math.min(.1,(t-last)/1000):0;last=t;
+   const vector=moveVector(),oldKills=run.kills,oldHealth=run.health;
+   while(elapsed>.000001&&run.phase==='play'){const dt=Math.min(1/90,elapsed);run.step(dt,vector);elapsed-=dt}
+   if(run.health<oldHealth)tone(140,70,.13,.035,0,'triangle');
+   else if(run.kills>oldKills)tone(430,270,.07,.018,0,'triangle');
+   SignalArt.scene(ctx,run,stick);hud();
+   if(run.phase==='gear'){tone(435,620,.16,.035);tone(620,820,.14,.03,.12);show('gear')}
+   else if(run.phase==='lost'||run.phase==='won')show(run.phase);
+   else frame=requestAnimationFrame(loop);
+ }
+ function resume(){
+   if(run.phase!=='play'){show(run.phase);return}
+   screen=null;el('dialog').hidden=true;el('pause').disabled=false;clearInput();board.focus({preventScroll:true});startFrame();
+ }
+ function reset(){
+   run.reset();screen=null;returnScreen=null;uiStamp='';gearStamp='';timeLabel='';hud();SignalArt.scene(ctx,run,null);
+   el('live').textContent='New run. Survive until the rescue signal.';resume();
+ }
+ function action(text,runAction,secondary=false){
+   const button=document.createElement('button');button.type='button';button.textContent=text;if(secondary)button.className='secondary';
+   button.onclick=runAction;el('actions').append(button);return button;
+ }
+ function choose(index){
+   if(screen!=='gear')return;const key=run.offers[index];if(!run.equip(key))return;
+   el('live').textContent=signalGear[key].name+' equipped, rank '+run.rank(key)+'.';hud();tone(480,710,.12,.04);
+   if(run.phase==='gear')show('gear');else resume();
+ }
+ function restore(){const target=returnScreen;returnScreen=null;if(target)show(target);else resume()}
+ function show(which){
+   stopFrame();clearInput();const old=screen;
+   if(which==='help'||which==='restart')returnScreen=old;
+   screen=which;el('dialog').hidden=false;el('pause').disabled=true;el('actions').replaceChildren();el('options').replaceChildren();
+   let heading,copy;
+   switch(which){
+     case 'gear':
+       heading='Level '+run.level+' · Choose gear';copy='Pick one upgrade. Matching gear gains a rank.';
+       run.offers.forEach((key,i)=>{
+         const info=signalGear[key],b=document.createElement('button'),name=document.createElement('strong'),desc=document.createElement('span'),hint=document.createElement('small');
+         b.className='ds-choice';b.type='button';name.textContent=info.name;desc.textContent=info.desc;hint.textContent='['+(i+1)+']  RANK '+(run.rank(key)+1);
+         b.append(gearCanvas(key),name,desc,hint);b.onclick=()=>choose(i);el('options').append(b);
+       });el('live').textContent='Level '+run.level+'. Choose one of three pieces of gear.';break;
+     case 'paused':
+       heading='Paused';copy='The rescue countdown is paused.';action('Resume',resume);action('Game library',()=>navigate('library'),true);break;
+     case 'help':
+       heading='How to play';copy='Move with WASD, the arrow keys, or a drag on the street. Your pulse caster targets the nearest zombie. Defeats grant XP. Collect glowing cells for more. Each level earns one gear pick. Survive five waves until rescue arrives.';action('Got it',restore);break;
+     case 'restart':
+       heading='Start a new run?';copy='This will reset your level and gear.';action('Keep run',restore,true);action('New run',reset);break;
+     default:
+       heading=which==='won'?'Signal received!':'Signal lost';
+       copy=(which==='won'?'Rescue reached the intersection. ':'')+run.score+' points · '+run.kills+' zombies cleared · Level '+run.level;
+       action('Play again',reset);action('Game library',()=>navigate('library'),true);el('live').textContent=heading+' '+copy;
+   }
+   el('dialog-title').textContent=heading;el('dialog-text').textContent=copy;
+   if(arcadeView==='dead-signal')el('dialog').querySelector('button')?.focus({preventScroll:true});
+ }
+ const keys=new Set(['KeyA','KeyD','KeyW','KeyS','ArrowLeft','ArrowRight','ArrowDown','ArrowUp']);
+ window.addEventListener('keydown',e=>{
+   if(arcadeView!=='dead-signal'||e.ctrlKey||e.metaKey||e.altKey)return;
+   if(screen){
+     if(e.key==='Tab'){
+       const buttons=el('dialog').querySelectorAll('button'),first=buttons[0],last=buttons[buttons.length-1];
+       if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+     }
+     if(e.repeat)return;
+     if(screen==='gear'&&['1','2','3'].includes(e.key)){e.preventDefault();choose(Number(e.key)-1)}
+     if(screen==='paused'&&(e.code==='KeyP'||e.key==='Escape'))resume();
+     else if((screen==='help'||screen==='restart')&&e.key==='Escape')restore();
+     return;
+   }
+   if(keys.has(e.code)){e.preventDefault();held.add(e.code);audioReady()}
+   if(!e.repeat&&(e.code==='KeyP'||e.key==='Escape')){e.preventDefault();show('paused')}
+ });
+ window.addEventListener('keyup',e=>held.delete(e.code));
+ const point=e=>{const r=board.getBoundingClientRect();return {x:(e.clientX-r.left)/r.width*432,y:(e.clientY-r.top)/r.height*260}};
+ board.addEventListener('pointerdown',e=>{
+   if(screen||arcadeView!=='dead-signal'||e.button!==0||stick)return;
+   audioReady();board.focus({preventScroll:true});board.setPointerCapture(e.pointerId);stick={...point(e),id:e.pointerId,dx:0,dy:0};
+ });
+ board.addEventListener('pointermove',e=>{
+   if(!stick||e.pointerId!==stick.id)return;const p=point(e),x=p.x-stick.x,y=p.y-stick.y,n=Math.max(15,Math.hypot(x,y));stick.dx=x/n;stick.dy=y/n;
+ });
+ for(const event of ['pointerup','pointercancel','lostpointercapture'])board.addEventListener(event,e=>{if(e.pointerId===stick?.id)stick=null});
+ el('pause').onclick=()=>{if(!screen)show('paused')};el('reset').onclick=()=>{if(screen==='won'||screen==='lost')reset();else if(screen!=='help'&&screen!=='restart')show('restart')};
+ document.addEventListener('visibilitychange',()=>{if(document.hidden&&arcadeView==='dead-signal'&&!screen)show('paused')});
+ window.addEventListener('blur',()=>{clearInput();if(arcadeView==='dead-signal'&&!screen)show('paused')});
+ return {enter(){hud();SignalArt.scene(ctx,run,null);if(screen)el('dialog').querySelector('button')?.focus({preventScroll:true});else resume()},
+   leave(){stopFrame();clearInput();if(!screen)show('paused')},
+   help(){if(screen!=='help'&&screen!=='restart')show('help')},record:()=>best,cover:SignalArt.cover};
+})();
+
+</script>
+<script>
 const orchardHelp=$('help').onclick;
-const pages={library:$('library-page'),'orchard-drop':$('orchard-page'),'moonrise-slice':$('slice-page')};
+const pages={library:$('library-page'),'orchard-drop':$('orchard-page'),'moonrise-slice':$('slice-page'),'dead-signal':$('dead-page')};
 let lastCard=null;
 function route(id){
  if(!Object.hasOwn(pages,id))id='library';
@@ -660,11 +1092,13 @@ function route(id){
    cancelAnimationFrame(orchardFrame);keys.clear();pointer=null;
    if(mode==='playing'&&world.drops)dialog('paused');
  }
+ if(previous==='dead-signal')DeadSignal.leave();
  if(previous==='moonrise-slice')Moonrise.leave();
  arcadeView=id;
  for(const [name,page] of Object.entries(pages))page.hidden=name!==id;
  const home=id==='library';$('menu-link').hidden=home;$('help').hidden=home;
  if(home){
+   $('dead-record').textContent=DeadSignal.record().toLocaleString();
    $('orchard-record').textContent=best.toLocaleString();$('slice-record').textContent=Moonrise.record().toLocaleString();
    if(previous&&lastCard)lastCard.focus({preventScroll:true});
  }else{
@@ -672,9 +1106,9 @@ function route(id){
    if(id==='orchard-drop'){
      last=0;acc=0;orchardFrame=requestAnimationFrame(frame);
      if(mode==='playing')board.focus({preventScroll:true});else $('dialog-buttons').firstElementChild.focus({preventScroll:true});
-   }else Moonrise.enter();
+   }else if(id==='dead-signal')DeadSignal.enter();else Moonrise.enter();
  }
- document.title=home?'Pocket Arcade · Game library':(id==='orchard-drop'?'Orchard Drop':'Moonrise Slice')+' · Pocket Arcade';
+ document.title=home?'Pocket Arcade · Game library':(id==='orchard-drop'?'Orchard Drop':id==='dead-signal'?'Dead Signal':'Moonrise Slice')+' · Pocket Arcade';
  window.scrollTo(0,0);
 }
 function navigate(id){
@@ -688,8 +1122,9 @@ document.querySelectorAll('[data-route]').forEach(link=>link.addEventListener('c
 }));
 window.addEventListener('popstate',()=>route(location.hash.slice(1)));
 window.addEventListener('hashchange',()=>route(location.hash.slice(1)));
-$('help').onclick=()=>{if(arcadeView==='orchard-drop')orchardHelp();else if(arcadeView==='moonrise-slice')Moonrise.help()};
+$('help').onclick=()=>{if(arcadeView==='orchard-drop')orchardHelp();else if(arcadeView==='moonrise-slice')Moonrise.help();else if(arcadeView==='dead-signal')DeadSignal.help()};
 orchardCover($('orchard-cover').getContext('2d'));sliceCover($('slice-cover').getContext('2d'));
+DeadSignal.cover($('dead-cover'));
 route(location.hash.slice(1));
 
 </script>
